@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Karla:wght@400;700&display=swap');
+
+
+:root {
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray:hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+--Fontsize: 16px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 700px;
+    box-shadow: 0rem 0.9375rem 1.875rem rgb(0 81 171 / 15%);
+    border-radius: 10px;
+    
+}
+
+body {
+    background-color: var(--Light-Gray);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+}
+
+article {
+    background-color: white;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1 {
+    color: var(--Cyan);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+article h2 {
+    color: var(--Bright-Yellow);
+    margin-top: 1.5rem;
+    font-size: 20px;
+}
+
+article p {
+    color: var(--Grayish-Blue);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.card-left {
+    background-color: var(--Cyan);
+    padding: 2rem;
+    width:350px;
+    border-bottom-left-radius: 10px;
+    color: white;
+
+}
+
+.card-right {
+    background-color: var(--Cyan);
+    opacity: 0.8;
+    padding: 2rem;
+    width: 350px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+
+.card-left h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.dollar {
+    font-size: 36px;
+    font-weight: 700;
+}
+.dollar-d {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--Light-Gray);
+}
+
+.description {
+    font-size: 13px;
+    margin-bottom: 1rem;
+
+}
+
+.btn {
+    display: flex;
+    background-color: var(--Bright-Yellow);
+    padding: 12px 26px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0rem 0.9375rem 1.875rem rgb(0 81 171 / 15%);
+}
+
+button {
+    border: none;
+    background: none;
+    color: white;
+}
+
+.card-right h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    color: white;
+    opacity: 0.7;
+}
+
+@media (max-width:680px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        max-width: 680px;
+    }
+}
